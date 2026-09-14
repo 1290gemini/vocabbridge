@@ -1,0 +1,1 @@
+17ef41128c1e905f0bb2c5a387b2620c84f113da10c4c4543972d4fc2aec6b3d  install/VocabBridge-arm64-debug.apk

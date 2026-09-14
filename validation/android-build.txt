@@ -1,0 +1,9 @@
+  Determining projects to restore...
+  Restored /workspace/scratch/32f436c6f70e/VocabBridge-Android/src/VocabBridge/VocabBridge.csproj (in 12.9 sec).
+  VocabBridge -> /workspace/scratch/32f436c6f70e/VocabBridge-Android/src/VocabBridge/bin/Debug/net10.0-android/android-arm64/VocabBridge.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:01:48.38

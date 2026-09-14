@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.0" />
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="2.1.13" />
+    <Compile Include="../../src/VocabBridge/Models/*.cs" Link="Models/%(Filename)%(Extension)" />
+    <Compile Include="../../src/VocabBridge/Services/LocalStore.cs" Link="LocalStore.cs" />
+    <Compile Include="../../src/VocabBridge/Services/VoicePolicy.cs" Link="VoicePolicy.cs" />
+    <Compile Include="../../src/VocabBridge/Services/PracticePlayer.cs" Link="PracticePlayer.cs" />
+    <Compile Include="../../src/VocabBridge/Services/PracticeQueue.cs" Link="PracticeQueue.cs" />
+    <Compile Include="../../src/VocabBridge/Services/LanguageRemoval.cs" Link="LanguageRemoval.cs" />
+    <Compile Include="../../src/VocabBridge/Services/VoiceLabels.cs" Link="VoiceLabels.cs" />
+  </ItemGroup>
+</Project>

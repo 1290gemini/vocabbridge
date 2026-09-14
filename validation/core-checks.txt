@@ -1,0 +1,56 @@
+PASS: fresh install selects no languages
+PASS: only Myanmar English Russian offered
+PASS: two real SQLite tables start without language columns
+PASS: adding words requires a selected language
+PASS: language selection adds physical columns to both tables
+PASS: Russian uses two aspect columns for verbs and one for vocabulary
+PASS: third-language addition preserves rows and starts empty
+PASS: editor cannot mutate saved data
+PASS: both tables and Unicode persist across restart
+PASS: verb playback follows selected language order and includes both Russian aspects
+PASS: both verb forms use the Russian voice
+PASS: vocabulary playback excludes verbs
+PASS: unrelated JSON rejected
+PASS: truncated JSON rejected
+PASS: invalid restore leaves data unchanged
+PASS: empty entries rejected
+PASS: oversized text rejected
+PASS: unoffered language rejected
+PASS: generic settings writes cannot bypass language removal flow
+PASS: cancel action sheet aborts removal
+PASS: cancelled backup never reaches delete confirmation
+PASS: failed backup aborts removal
+PASS: all backup cancellation/failure paths preserve Russian data
+PASS: cancel final confirmation retains language
+PASS: pre-deletion backup includes both Russian forms
+PASS: successful backup and confirmation permit removal
+PASS: Russian columns are physically dropped from both tables
+PASS: removal deletes Russian values but keeps other translations
+PASS: re-added language starts empty instead of resurrecting deleted data
+PASS: backup restore recreates removed schema and values
+PASS: stale removal plan cannot delete data newer than its backup
+PASS: concurrent saves retain every entry
+PASS: removal preview counts rows that would become empty
+PASS: only newly empty rows are removed
+PASS: SQLite transaction reports interrupted schema/data write
+PASS: failed write rolls back both tables and selected-language settings
+PASS: legacy Russian verbs are preserved without guessing aspect
+PASS: migration retains hidden legacy translations and untouched source backup
+PASS: migration stores previous Russian text in a real column
+PASS: clearing last legacy value removes temporary migration column
+PASS: bad legacy file is not silently reset
+PASS: failed migration leaves no empty replacement database
+PASS: no descriptions or timestamps added
+PASS: explicitly removing last language returns to empty setup
+PASS: installed offline voice accepted
+PASS: missing voice data still prompts download
+PASS: network-only voice never accepted
+PASS: engine failure is distinct
+PASS: voice names use language and country rather than engine codes
+PASS: multiple unnamed voices get honest numbered labels
+PASS: queue waits for native completion
+PASS: rapid pause/resume replays current word
+PASS: queue advances after completion
+PASS: stop resets queue
+PASS: repeat count completes exactly
+All 55 checks passed.

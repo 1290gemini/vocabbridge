@@ -1,0 +1,14 @@
+VocabBridge Android 1.1
+
+1. If an older app has words, export a JSON backup from it first.
+2. Read README_MY.md for Myanmar instructions.
+3. Test APK: install/VocabBridge-arm64-debug.apk (ARM64 Android 6.0+).
+4. Source: src/VocabBridge/VocabBridge.csproj
+5. New wordbooks start with no selected languages. Choose them in Settings.
+6. Real tables: Verbs and Vocabularies. Russian verbs have two aspect fields.
+7. Settings contains language, phone voice and playback settings.
+
+A signing-key mismatch can require uninstall/reinstall. Export before uninstalling,
+then restore the JSON backup in the new app. See README_MY.md.
+
+Validation results: VALIDATION.md. No real-phone UI/audio test was available here.
